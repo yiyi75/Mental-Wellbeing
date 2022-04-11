@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "winter2022prescreener",
+    "winterpre": "winter2022prescreener",
+    "pre": "winter2022prescreener"
+  },
+  "targets": {}
+}

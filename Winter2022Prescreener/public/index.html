@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pre-Screener</title>
+  <!-- update the version number as needed -->
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+  <!-- include only the Firebase features as you need -->
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+  <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+  <script>
+
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    // Import the functions you need from the SDKs you need
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCA4OEoOOMJ3B3JeWyVajcaMx5hOHhTyYs",
+      authDomain: "winter2022prescreener.firebaseapp.com",
+      databaseURL: "https://winter2022prescreener-default-rtdb.firebaseio.com",
+      projectId: "winter2022prescreener",
+      storageBucket: "winter2022prescreener.appspot.com",
+      messagingSenderId: "478408490887",
+      appId: "1:478408490887:web:c27ef7f9fb99d246891d22"
+    };
+
+    // Initialize Firebase
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); }
+
+    window.gtag("config", firebaseConfig.measurementId, {
+      cookie_domain: location.hostname,
+      cookie_flags: "SameSite=None;Secure",
+    });
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database();
+
+    firebase.analytics();
+
+  </script>
+
+  <script src="./jspsych.js"></script>
+  <link href="./css/jspsych.css" rel="stylesheet" type="text/css">
+  </link>
+  <link href="./index.css" rel="stylesheet" type="text/css">
+  </link>
+  <script src="./js/database.js"></script>
+  <script src="./js/getid.js"></script>
+
+  <script src="./js/consent.js"></script>
+  <script src="./js/instructions.js"></script>
+  <script src="./js/criteria.js"></script>
+  <script src="./js/QCcheck.js"></script>
+  <script src="./js/GPArelease.js"></script>
+  <script src="./js/email.js"></script>
+  <script src="./js/signupid.js"></script>
+
+  <!-- Questionnaires -->
+  <script src="./js/Q_Demographics.js"></script>
+  
+  <!-- Questionnaires -->
+  <script src="./js/stress.js"></script>
+  <script src="./js/Q_decentering.js"></script>
+  <script src="./js/Q_Reappraisal.js"></script>
+  <script src="./js/Q_PersonalWB.js"></script>
+
+
+  <!-- jspsych library -->
+  <script src="./plugins/jspsych-preload.js"></script>
+  <script src="./plugins/jspsych-external-html.js"></script>
+  <script src="./plugins/jspsych-survey-html-form.js"></script>
+  <script src="./plugins/jspsych-survey-likert.js"></script>
+  <script src="./plugins/jspsych-survey-text.js"></script>
+  <script src="./plugins/jspsych-survey-multi-choice.js"></script>
+  <script src="./plugins/jspsych-instructions.js"></script>
+  <script src="./plugins/jspsych-html-button-response.js"></script>
+  <script src="./plugins/jspsych-html-keyboard-response.js"></script>
+  <script src="./plugins/jspsych-canvas-keyboard-response.js"></script>
+
+  <script src="./index.js"></script>
+
+</head>
+
+<body>
+</body>
+
+</html>

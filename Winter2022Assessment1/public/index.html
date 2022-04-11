@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Study 2022 Winter Assessment 1</title>
+
+    <!-- update the version number as needed -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- include only the Firebase features as you need -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+
+    <script>
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyDaLmLgcfcARrdz0WuOkrSMrI82c-uUwk8",
+          authDomain: "winter2022assessment1.firebaseapp.com",
+          databaseURL: "https://winter2022assessment1-default-rtdb.firebaseio.com",
+          projectId: "winter2022assessment1",
+          storageBucket: "winter2022assessment1.appspot.com",
+          messagingSenderId: "878714493753",
+          appId: "1:878714493753:web:b6b637dc130866677166e8"
+        };
+
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function(){dataLayer.push(arguments);}
+
+        window.gtag("config", firebaseConfig.measurementId, {
+            cookie_domain: location.hostname,
+            cookie_flags: "SameSite=None;Secure",
+        });
+      
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      var database = firebase.database();
+  
+      firebase.analytics();
+    </script>
+
+    
+    <script src="./jspsych.js"></script>
+    <link href="./css/jspsych.css" rel="stylesheet" type="text/css"></link>
+    <link href="./index.css" rel="stylesheet" type="text/css"> </link>
+    
+    <script src="./js/getid.js"></script>
+    <script src="./js/instructions.js"></script>
+    <script src="./js/helpers.js"></script>
+    <script src="./js/database.js"></script>
+
+
+    <script src="./js/email2.js"></script>
+    
+    <script src="./js/Q_Demographics.js"></script>
+
+    <!-- Questionnaires -->
+    <script src="./js/stress.js"></script>
+    <script src="./js/Q_decentering.js"></script>
+    <script src="./js/Q_Mindfulness.js"></script>
+    <script src="./js/Q_StressMindset.js"></script>
+    <script src="./js/Q_Reappraisal.js"></script>
+    <script src="./js/Q_PersonalWB.js"></script>
+    <script src="./js/Q_SocialWB.js"></script>
+    <script src="./js/Q_TestAnxiety.js"></script>
+
+    <!-- jspsych library -->
+    <script src="./plugins/jspsych-preload.js"></script>
+    <script src="./plugins/jspsych-external-html.js"></script>
+    <script src="./plugins/jspsych-survey-html-form.js"></script>
+    <script src="./plugins/jspsych-survey-likert.js"></script>
+    <script src="./plugins/jspsych-html-slider-response.js"></script>
+    <script src="./plugins/jspsych-survey-multi-choice.js"></script>
+    <script src="./plugins/jspsych-instructions.js"></script>
+    <script src="./plugins/jspsych-html-button-response.js"></script>
+    <script src="./plugins/jspsych-html-keyboard-response.js"></script>
+    <script src="./plugins/jspsych-canvas-keyboard-response.js"></script>
+
+    <script src="./index.js"></script>
+  </head>
+  <body></body>
+
+
+
+</html>
